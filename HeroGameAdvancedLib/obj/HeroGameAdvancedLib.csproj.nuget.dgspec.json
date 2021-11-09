@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anguyen/Projects/HeroGameAdvancedModels/HeroGameAdvancedLib/HeroGameAdvancedLib.csproj": {}
+    "C:\\Users\\eve\\OneDrive - Swinburne University\\Documents\\IOO\\HeroesTesting\\HeroGameAdvancedLib\\HeroGameAdvancedLib.csproj": {}
   },
   "projects": {
-    "/Users/anguyen/Projects/HeroGameAdvancedModels/HeroGameAdvancedLib/HeroGameAdvancedLib.csproj": {
+    "C:\\Users\\eve\\OneDrive - Swinburne University\\Documents\\IOO\\HeroesTesting\\HeroGameAdvancedLib\\HeroGameAdvancedLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anguyen/Projects/HeroGameAdvancedModels/HeroGameAdvancedLib/HeroGameAdvancedLib.csproj",
+        "projectUniqueName": "C:\\Users\\eve\\OneDrive - Swinburne University\\Documents\\IOO\\HeroesTesting\\HeroGameAdvancedLib\\HeroGameAdvancedLib.csproj",
         "projectName": "HeroGameAdvancedLib",
-        "projectPath": "/Users/anguyen/Projects/HeroGameAdvancedModels/HeroGameAdvancedLib/HeroGameAdvancedLib.csproj",
-        "packagesPath": "/Users/anguyen/.nuget/packages/",
-        "outputPath": "/Users/anguyen/Projects/HeroGameAdvancedModels/HeroGameAdvancedLib/obj/",
+        "projectPath": "C:\\Users\\eve\\OneDrive - Swinburne University\\Documents\\IOO\\HeroesTesting\\HeroGameAdvancedLib\\HeroGameAdvancedLib.csproj",
+        "packagesPath": "C:\\Users\\eve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eve\\OneDrive - Swinburne University\\Documents\\IOO\\HeroesTesting\\HeroGameAdvancedLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/anguyen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\eve\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "/Users/anguyen/.nuget/NuGet/Microsoft.EntityFrameworkCore.Design": {},
-          "/Users/anguyen/.nuget/NuGet/microsoft.entityframework.tools": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
