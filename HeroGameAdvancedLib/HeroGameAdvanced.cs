@@ -18,7 +18,7 @@ namespace HeroGameAdvancedLib {
         // timesToAttack is greater that the number of Uses should return -1 and not subtract from Uses.
         public int Attack(int timesToAttack) {
             this.Uses -= timesToAttack;
-            return this.Dice.Roll * timesToAttack;
+            return this.Dice.Roll() * timesToAttack;
         }
 
         
@@ -39,7 +39,8 @@ namespace HeroGameAdvancedLib {
         // if damage is greater that Hitpoints, Hitpoints should be set to 0 (zero)
         public void Damage(int amount) {
             this.Hitpoints -= amount;
-            this.Hitpoints < 0 ? this.Hitpoints = 0 : this.Hitpoints;
+            if (this.Hitpoints < 0)
+                this.Hitpoints = 0; 
         }
     }
 
