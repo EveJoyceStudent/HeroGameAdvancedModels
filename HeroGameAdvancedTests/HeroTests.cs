@@ -18,6 +18,8 @@ namespace HeroGameAdvancedTests
             this.heroTest2 = new Hero(2,"Test2",this.heroDice2,0);
         }
 
+        // this.heroDice1 = new Dice(1,6);
+        // this.heroTest1 = new Hero(1,"Test1",this.heroDice1,3);
         [Theory]
         [InlineData(1,1,6,2)]
         [InlineData(0,0,0,3)]
@@ -30,6 +32,9 @@ namespace HeroGameAdvancedTests
             Assert.InRange(attackValue, attackValueMin, attackValueMax);
             Assert.Equal(this.heroTest1.Uses,expectedUses);
         }
+
+        // this.heroDice2 = new Dice(0,5);
+        // this.heroTest2 = new Hero(2,"Test2",this.heroDice2,0);
         [Theory]
         [InlineData(1,-1,-1,0)]
         [InlineData(0,0,0,0)]
@@ -37,7 +42,7 @@ namespace HeroGameAdvancedTests
         {
             int attackValue = this.heroTest2.Attack(numAttacks);
             Assert.InRange(attackValue, attackValueMin, attackValueMax);
-            Assert.Equal(this.heroTest1.Uses,expectedUses);
+            Assert.Equal(this.heroTest2.Uses,expectedUses);
         }
     }
 }

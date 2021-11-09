@@ -35,7 +35,7 @@ namespace HeroGameAdvancedTests
         public void Villain2AttackTests(int damageValue, int expectedHealth)
         {
             this.villainTest2.Damage(damageValue);
-            Assert.Equal(expectedHealth, this.villainTest1.Hitpoints);
+            Assert.Equal(expectedHealth, this.villainTest2.Hitpoints);
         }
     }
 }
