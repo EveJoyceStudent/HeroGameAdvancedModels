@@ -31,13 +31,56 @@ namespace HeroGameAdvancedTests
         [InlineData(3,-5,5)]
         [InlineData(4,-5,0)]
         [InlineData(5,-1,-1)]
-        public void DiceValueTests(int diceIndex, int diceValueMin, int diceValueMax)
+        public void DiceInRangeTests(int diceIndex, int diceValueMin, int diceValueMax)
         {
             int diceValue;
-            for(int i=0; i<100; i++){
+            for(int i=0; i<1000; i++){
                 diceValue = this.diceList[diceIndex].Roll();
                 Assert.InRange(diceValue, diceValueMin, diceValueMax);
             }
+        }
+
+        [Theory]
+        [InlineData(0,1,6)]
+        [InlineData(1,1,1)]
+        [InlineData(2,0,5)]
+        [InlineData(3,-5,5)]
+        [InlineData(4,-5,0)]
+        [InlineData(5,-1,-1)]
+        public void DiceMinTests(int diceIndex, int diceValueMin, int diceValueMax)
+        {
+            int diceValue;
+            int diceMin;
+            diceValue = diceMin = this.diceList[diceIndex].Roll();
+            for(int i=0; i<1000; i++){
+                diceValue = this.diceList[diceIndex].Roll();
+                if(diceValue<diceMin){
+                    diceMin=diceValue;
+                }
+            }
+            Assert.Equal(diceValueMin,diceMin);
+        }
+
+        [Theory]
+        [InlineData(0,1,6)]
+        [InlineData(1,1,1)]
+        [InlineData(2,0,5)]
+        [InlineData(3,-5,5)]
+        [InlineData(4,-5,0)]
+        [InlineData(5,-1,-1)]
+        public void DiceMaxTests(int diceIndex, int diceValueMin, int diceValueMax)
+        {
+            int diceValue;
+            int diceMax;
+            diceValue = diceMax = this.diceList[diceIndex].Roll();
+
+            for(int i=0; i<1000; i++){
+                diceValue = this.diceList[diceIndex].Roll();
+                if(diceValue>diceMax){
+                    diceMax=diceValue;
+                }
+            }
+            Assert.Equal(diceValueMax,diceMax);
         }
     }
 }
